@@ -58,75 +58,65 @@ feature rphf {
 
 feature vatu {
 
-  lookup yansaya {
-    sub snVirama snYA by snYAc2;
-  } yansaya;
+  lookup vatu_c2 {
+    sub snVirama zerowidthjoiner snYA by snYAc2;
+    sub snVirama zerowidthjoiner snRA by snRAc2;
+  } vatu_c2;
 
-  lookup rakar {
+  lookup vatu_ligating {
 
-    sub snVirama snRA by snRAc2;
-
-    sub snKA snRAc2 by snK_RA;
-    sub snKHA snRAc2 by snKH_RA;
-    sub snGA snRAc2 by snG_RA;
-    sub snGHA snRAc2 by snGH_RA;
-    sub snNGA snRAc2 by snNG_RA;
+    sub snKA   snRAc2 by snK_RA;
+    sub snKHA  snRAc2 by snKH_RA;
+    sub snGA   snRAc2 by snG_RA;
+    sub snGHA  snRAc2 by snGH_RA;
+    sub snNGA  snRAc2 by snNG_RA;
     sub snNNGA snRAc2 by snNNG_RA;
-    sub snCA snRAc2 by snC_RA;
-    sub snCHA snRAc2 by snCH_RA;
-    sub snJA snRAc2 by snJ_RA;
-    sub snJHA snRAc2 by snJH_RA;
-    sub snNYA snRAc2 by snNY_RA;
+    sub snCA   snRAc2 by snC_RA;
+    sub snCHA  snRAc2 by snCH_RA;
+    sub snJA   snRAc2 by snJ_RA;
+    sub snJHA  snRAc2 by snJH_RA;
+    sub snNYA  snRAc2 by snNY_RA;
     sub snJNYA snRAc2 by snJNY_RA;
     sub snNYJA snRAc2 by snNYJ_RA;
-    sub snTTA snRAc2 by snTT_RA;
+    sub snTTA  snRAc2 by snTT_RA;
     sub snTTHA snRAc2 by snTTH_RA;
-    sub snDDA snRAc2 by snDD_RA;
+    sub snDDA  snRAc2 by snDD_RA;
     sub snDDHA snRAc2 by snDDH_RA;
-    sub snNNA snRAc2 by snNN_RA;
-    # sub snNNDDA snRAc2 by snNNDD_RA;
-    sub snTA snRAc2 by snT_RA;
-    sub snTHA snRAc2 by snTH_RA;
-    sub snDA snRAc2 by snD_RA;
-    sub snDHA snRAc2 by snDH_RA;
-    sub snNA snRAc2 by snN_RA;
-    sub snNDA snRAc2 by snND_RA;
-    sub snPA snRAc2 by snP_RA;
-    sub snPHA snRAc2 by snPH_RA;
-    sub snBA snRAc2 by snB_RA;
-    sub snBHA snRAc2 by snBH_RA;
-    sub snMA snRAc2 by snM_RA;
-    sub snMBA snRAc2 by snMB_RA;
-    sub snYA snRAc2 by snY_RA;
-    sub snLA snRAc2 by snL_RA;
-    sub snVA snRAc2 by snV_RA;
-    sub snSHA snRAc2 by snSH_RA;
-    sub snSSA snRAc2 by snSS_RA;
-    sub snSA snRAc2 by snS_RA;
-    sub snHA snRAc2 by snH_RA;
-    sub snLLA snRAc2 by snLL_RA;
-    sub snFA snRAc2 by snF_RA;
-    sub snK_VA snRAc2 by snK_V_RA;
-    sub snK_SSA snRAc2 by snK_SS_RA;
-    # sub snG_DHA snRAc2 by sG_DH_RA;
-    # sub snNY_CA snRAc2 by snNY_C_RA;
-    sub snTT_TTHA snRAc2 by snTT_TTH_RA;
-    sub snT_THA snRAc2 by snT_TH_RA;
-    sub snT_VA snRAc2 by snT_V_RA;
-    sub snD_DHA snRAc2 by snD_DH_RA;
-    sub snD_VA snRAc2 by snD_V_RA;
-    sub snN_THA snRAc2 by snN_TH_RA;
-    # sub snN_DA snRAc2 by snN_D_RA;
-    sub snN_DHA snRAc2 by snN_DH_RA;
-    sub snN_VA snRAc2 by snN_V_RA;
-    # sub snNY_RA snRAc2 by snNY_R_RA;
-    # sub snJYN_RA snRAc2 by snJNY_R_RA;
-    # sub snD_RA snRAc2 by snD_R_RA;
-    # sub snND_RA snRAc2 by snND_R_RA;
-    # sub snL_RA snRAc2 by snL_R_RA_RA;
-    # sub snN_D_RA snVirama by snN_D_R_RA_RA;
+    sub snNNA  snRAc2 by snNN_RA;
+    sub snTA   snRAc2 by snT_RA;
+    sub snTHA  snRAc2 by snTH_RA;
+    sub snDA   snRAc2 by snD_RA;
+    sub snDHA  snRAc2 by snDH_RA;
+    sub snNA   snRAc2 by snN_RA;
+    sub snNDA  snRAc2 by snND_RA;
+    sub snPA   snRAc2 by snP_RA;
+    sub snPHA  snRAc2 by snPH_RA;
+    sub snBA   snRAc2 by snB_RA;
+    sub snBHA  snRAc2 by snBH_RA;
+    sub snMA   snRAc2 by snM_RA;
+    sub snMBA  snRAc2 by snMB_RA;
+    sub snYA   snRAc2 by snY_RA;
+    sub snLA   snRAc2 by snL_RA;
+    sub snVA   snRAc2 by snV_RA;
+    sub snSHA  snRAc2 by snSH_RA;
+    sub snSSA  snRAc2 by snSS_RA;
+    sub snSA   snRAc2 by snS_RA;
+    sub snHA   snRAc2 by snH_RA;
+    sub snLLA  snRAc2 by snLL_RA;
+    sub snFA   snRAc2 by snF_RA;
 
-  } rakar;
+    sub snK_VA    snRAc2 by snK_V_RA;
+    sub snK_SSA   snRAc2 by snK_SS_RA;
+    sub snTT_TTHA snRAc2 by snTT_TTH_RA;
+    sub snT_THA   snRAc2 by snT_TH_RA;
+    sub snT_VA    snRAc2 by snT_V_RA;
+    sub snD_DHA   snRAc2 by snD_DH_RA;
+    sub snD_VA    snRAc2 by snD_V_RA;
+    sub snN_THA   snRAc2 by snN_TH_RA;
+    sub snN_DHA   snRAc2 by snN_DH_RA;
+    sub snN_VA    snRAc2 by snN_V_RA;
+
+  } vatu_ligating;
 
 } vatu;
 
