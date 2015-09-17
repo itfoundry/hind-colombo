@@ -49,7 +49,7 @@ feature akhn {
 # ----------
 
 feature rphf {
-  sub snRA snVirama by snReph;
+  sub snRA snVirama zerowidthjoiner by snReph;
 } rphf;
 
 
