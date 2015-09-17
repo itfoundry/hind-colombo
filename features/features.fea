@@ -31,17 +31,17 @@ include (../../features/tables.fea);
 # ----------------
 
 feature akhn {
-  sub snKA snSSA by snK_SSA;
-  sub snKA snVA by snK_VA;
-  sub snGA snDHA by snG_DHA;
-  sub snNYA snCA by snNY_CA;
-  sub snTA snTHA by snT_THA;
-  sub snTA snVA by snT_VA;
-  sub snDA snDHA by snD_DHA;
-  sub snDA snVA by snD_VA;
-  sub snNA snTHA by snN_THA;
-  sub snNA snVA by snN_VA;
-  sub snNA snDA by snN_DA;
+  sub snKA  snVirama zerowidthjoiner snSSA by snK_SSA;
+  sub snKA  snVirama zerowidthjoiner snVA  by snK_VA;
+  sub snGA  snVirama zerowidthjoiner snDHA by snG_DHA;
+  sub snNYA snVirama zerowidthjoiner snCA  by snNY_CA;
+  sub snTA  snVirama zerowidthjoiner snTHA by snT_THA;
+  sub snTA  snVirama zerowidthjoiner snVA  by snT_VA;
+  sub snDA  snVirama zerowidthjoiner snDHA by snD_DHA;
+  sub snDA  snVirama zerowidthjoiner snVA  by snD_VA;
+  sub snNA  snVirama zerowidthjoiner snTHA by snN_THA;
+  sub snNA  snVirama zerowidthjoiner snDA  by snN_DA;
+  sub snNA  snVirama zerowidthjoiner snVA  by snN_VA;
 } akhn;
 
 
