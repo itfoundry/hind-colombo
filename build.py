@@ -6,16 +6,16 @@ kit.confirm_version('0.2.1')
 # - - -
 
 family = kit.Family(
-    trademark = 'Hind',
+    trademark = 'Hind Colombo',
     script = 'Sinhala',
-    # hide_script_name = True,
+    hide_script_name = True,
 )
 
 family.set_masters(
     modules = [
-        'kerning',
-        'mark_positioning',
-        'mark_to_mark_positioning',
+        # 'kerning',
+        # 'mark_positioning',
+        # 'mark_to_mark_positioning',
         # 'devanagari_matra_i_variants',
     ],
 )
@@ -26,7 +26,7 @@ family.set_styles()
 
 builder = kit.Builder(family)
 
-builder.fontrevision = '0.001'
+builder.fontrevision = '0.100'
 
 builder.set_options([
 
@@ -36,7 +36,7 @@ builder.set_options([
 
     'makeinstances', #!
     'checkoutlines', #!
-    'autohint',      #!
+    # 'autohint',      #!
 
     'do_style_linking',
     'use_os_2_version_4',
