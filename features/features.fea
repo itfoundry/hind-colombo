@@ -140,50 +140,50 @@ feature vatu {
 
 feature abvs {
 
-  sub snKA snVirama by snK;
+  # sub snKA snVirama by snK;
   sub snKHA snVirama by snKH;
-  sub snGA snVirama by snG;
-  sub snGHA snVirama by snGH;
+  # sub snGA snVirama by snG;
+  # sub snGHA snVirama by snGH;
   sub snNGA snVirama by snNG;
-  sub snNNGA snVirama by snNNG;
+  # sub snNNGA snVirama by snNNG;
   sub snCA snVirama by snC;
-  sub snCHA snVirama by snCH;
-  sub snJA snVirama by snJ;
+  # sub snCHA snVirama by snCH;
+  # sub snJA snVirama by snJ;
   sub snJHA snVirama by snJH;
-  sub snNYA snVirama by snNY;
-  sub snJNYA snVirama by snJNY;
-  sub snNYJA snVirama by snNYJ;
+  # sub snNYA snVirama by snNY;
+  # sub snJNYA snVirama by snJNY;
+  # sub snNYJA snVirama by snNYJ;
   sub snTTA snVirama by snTT;
-  sub snTTHA snVirama by snTTH;
+  # sub snTTHA snVirama by snTTH;
   sub snDDA snVirama by snDD;
-  sub snDDHA snVirama by snDDH;
-  sub snNNA snVirama by snNN;
-  # sub snNNDDA snVirama by snNNDD;
-  sub snTA snVirama by snT;
-  sub snTHA snVirama by snTH;
-  sub snDA snVirama by snD;
+  # sub snDDHA snVirama by snDDH;
+  # sub snNNA snVirama by snNN;
+  sub snNNDDA snVirama by snNNDD;
+  # sub snTA snVirama by snT;
+  # sub snTHA snVirama by snTH;
+  # sub snDA snVirama by snD;
   sub snDHA snVirama by snDH;
-  sub snNA snVirama by snN;
-  sub snNDA snVirama by snND;
-  sub snPA snVirama by snP;
-  sub snPHA snVirama by snPH;
+  # sub snNA snVirama by snN;
+  # sub snNDA snVirama by snND;
+  # sub snPA snVirama by snP;
+  # sub snPHA snVirama by snPH;
   sub snBA snVirama by snB;
-  sub snBHA snVirama by snBH;
+  # sub snBHA snVirama by snBH;
   sub snMA snVirama by snM;
   sub snMBA snVirama by snMB;
-  sub snYA snVirama by snY;
-  # sub snRA snVirama by snR; Rakar form
-  sub snLA snVirama by snL;
+  # sub snYA snVirama by snY;
+  sub snRA snVirama by snR;
+  # sub snLA snVirama by snL;
   sub snVA snVirama by snV;
-  sub snSHA snVirama by snSH;
-  sub snSSA snVirama by snSS;
-  sub snSA snVirama by snS;
-  sub snHA snVirama by snH;
-  sub snLLA snVirama by snLL;
-  sub snFA snVirama by snF;
+  # sub snSHA snVirama by snSH;
+  # sub snSSA snVirama by snSS;
+  # sub snSA snVirama by snS;
+  # sub snHA snVirama by snH;
+  # sub snLLA snVirama by snLL;
+  # sub snFA snVirama by snF;
   sub snK_VA snVirama by snK_V;
   sub snK_SSA snVirama by snK_SS;
-  # sub snG_DHA snVirama by sG_DH;
+  sub snG_DHA snVirama by snG_DH;
   sub snNY_CA snVirama by snNY_C;
   sub snTT_TTHA snVirama by snTT_TTH;
   sub snT_THA snVirama by snT_TH;
@@ -244,7 +244,7 @@ feature abvs {
   # sub snFA snmI by snFI;
   sub snK_VA snmI by snK_VI;
   sub snK_SSA snmI by snK_SSI;
-  # sub snG_DHA snmI by sG_DHI;
+  sub snG_DHA snmI by snG_DHI;
   sub snNY_CA snmI by snNY_CI;
   sub snTT_TTHA snmI by snTT_TTHI;
   sub snT_THA snmI by snT_THI;
@@ -305,7 +305,7 @@ feature abvs {
   # sub snFA snmII by snFII;
   sub snK_VA snmII by snK_VII;
   sub snK_SSA snmII by snK_SSII;
-  # sub snG_DHA snmII by sG_DHII;
+  sub snG_DHA snmII by snG_DHII;
   sub snNY_CA snmII by snNY_CII;
   sub snTT_TTHA snmII by snTT_TTHII;
   sub snT_THA snmII by snT_THII;
@@ -333,7 +333,6 @@ feature abvs {
   sub snCHA   snReph by snCHA_Reph;
   sub snJA    snReph by snJA_Reph;
   sub snJHA   snReph by snJHA_Reph;
-  sub snNNGA  snReph by snNNGA_Reph;
   sub snNYA   snReph by snNYA_Reph;
   sub snJNYA  snReph by snJNYA_Reph;
   sub snNYJA  snReph by snNYJA_Reph;
@@ -376,12 +375,12 @@ feature abvs {
   sub snD_DHA   snReph by snD_DHA_Reph;
   sub snD_VA    snReph by snD_VA_Reph;
   sub snN_THA   snReph by snN_THA_Reph;
-  sub snN_D_RA  snReph by snN_D_RA_Reph;
+  # sub snN_D_RA  snReph by snN_D_RA_Reph;
   sub snN_DA    snReph by snN_DA_Reph;
   sub snN_DHA   snReph by snN_DHA_Reph;
   sub snN_VA    snReph by snN_VA_Reph;
 
-  sub snYac2    snReph by snYAc2_Reph;
+  sub snYAc2    snReph by snYAc2_Reph;
 
 } abvs;
 
