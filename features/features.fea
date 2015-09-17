@@ -1,9 +1,8 @@
 languagesystem DFLT dflt;
 languagesystem sinh dflt;
 
-include (../../features/generated_classes.fea);
+include (../../features/GENERATED_classes.fea);
 include (../../features/tables.fea);
-include (../../features/lookups.fea);
 
 
 # ---------------
@@ -21,19 +20,28 @@ include (../../features/lookups.fea);
 # BASIC SHAPING FORMS
 # -------------------
 
-# Nukta Forms
-# -----------
+# Character Composition/Decomposition Substitution
+# ------------------------------------------------
 
-# feature nukt {
-#   lookup nukt;
-# } nukt;
+# feature ccmp {
+# } ccmp;
 
 
 # Akhand Ligatures
 # ----------------
 
 feature akhn {
-  lookup akhn;
+  sub snKA snSSA by snK_SSA;
+  sub snKA snVA by snK_VA;
+  sub snGA snDHA by snG_DHA;
+  sub snNYA snCA by snNY_CA;
+  sub snTA snTHA by snT_THA;
+  sub snTA snVA by snT_VA;
+  sub snDA snDHA by snD_DHA;
+  sub snDA snVA by snD_VA;
+  sub snNA snTHA by snN_THA;
+  sub snNA snVA by snN_VA;
+  sub snNA snDA by snN_DA;
 } akhn;
 
 
@@ -41,117 +49,401 @@ feature akhn {
 # ----------
 
 feature rphf {
-  lookup rphf;
+  sub snRA snVirama by snReph;
 } rphf;
-
-
-# Rakar Forms
-# -----------
-
-# feature rkrf {
-#
-#   script DFLT;
-#     lookup rkrf_dev2;
-#
-#   script dev2;
-#     lookup rkrf_dev2;
-#
-# } rkrf;
-
-
-# Below-base Forms
-# ----------------
-
-# feature blwf {
-# } blwf;
-
-
-# Half Forms
-# ----------
-
-# feature half {
-# } half;
 
 
 # Vattu Variants
 # --------------
 
 feature vatu {
-  lookup yansaya;
-  lookup rakar;
+
+  lookup yansaya {
+    sub snVirama snYA by snYAc2;
+  } yansaya;
+
+  lookup rakar {
+
+    sub snVirama snRA by snRAc2;
+
+    sub snKA snRAc2 by snK_RA;
+    sub snKHA snRAc2 by snKH_RA;
+    sub snGA snRAc2 by snG_RA;
+    sub snGHA snRAc2 by snGH_RA;
+    sub snNGA snRAc2 by snNG_RA;
+    sub snNNGA snRAc2 by snNNG_RA;
+    sub snCA snRAc2 by snC_RA;
+    sub snCHA snRAc2 by snCH_RA;
+    sub snJA snRAc2 by snJ_RA;
+    sub snJHA snRAc2 by snJH_RA;
+    sub snNYA snRAc2 by snNY_RA;
+    sub snJNYA snRAc2 by snJNY_RA;
+    sub snNYJA snRAc2 by snNYJ_RA;
+    sub snTTA snRAc2 by snTT_RA;
+    sub snTTHA snRAc2 by snTTH_RA;
+    sub snDDA snRAc2 by snDD_RA;
+    sub snDDHA snRAc2 by snDDH_RA;
+    sub snNNA snRAc2 by snNN_RA;
+    # sub snNNDDA snRAc2 by snNNDD_RA;
+    sub snTA snRAc2 by snT_RA;
+    sub snTHA snRAc2 by snTH_RA;
+    sub snDA snRAc2 by snD_RA;
+    sub snDHA snRAc2 by snDH_RA;
+    sub snNA snRAc2 by snN_RA;
+    sub snNDA snRAc2 by snND_RA;
+    sub snPA snRAc2 by snP_RA;
+    sub snPHA snRAc2 by snPH_RA;
+    sub snBA snRAc2 by snB_RA;
+    sub snBHA snRAc2 by snBH_RA;
+    sub snMA snRAc2 by snM_RA;
+    sub snMBA snRAc2 by snMB_RA;
+    sub snYA snRAc2 by snY_RA;
+    sub snLA snRAc2 by snL_RA;
+    sub snVA snRAc2 by snV_RA;
+    sub snSHA snRAc2 by snSH_RA;
+    sub snSSA snRAc2 by snSS_RA;
+    sub snSA snRAc2 by snS_RA;
+    sub snHA snRAc2 by snH_RA;
+    sub snLLA snRAc2 by snLL_RA;
+    sub snFA snRAc2 by snF_RA;
+    sub snK_VA snRAc2 by snK_V_RA;
+    sub snK_SSA snRAc2 by snK_SS_RA;
+    # sub snG_DHA snRAc2 by sG_DH_RA;
+    # sub snNY_CA snRAc2 by snNY_C_RA;
+    sub snTT_TTHA snRAc2 by snTT_TTH_RA;
+    sub snT_THA snRAc2 by snT_TH_RA;
+    sub snT_VA snRAc2 by snT_V_RA;
+    sub snD_DHA snRAc2 by snD_DH_RA;
+    sub snD_VA snRAc2 by snD_V_RA;
+    sub snN_THA snRAc2 by snN_TH_RA;
+    # sub snN_DA snRAc2 by snN_D_RA;
+    sub snN_DHA snRAc2 by snN_DH_RA;
+    sub snN_VA snRAc2 by snN_V_RA;
+    # sub snNY_RA snRAc2 by snNY_R_RA;
+    # sub snJYN_RA snRAc2 by snJNY_R_RA;
+    # sub snD_RA snRAc2 by snD_R_RA;
+    # sub snND_RA snRAc2 by snND_R_RA;
+    # sub snL_RA snRAc2 by snL_R_RA_RA;
+    # sub snN_D_RA snVirama by snN_D_R_RA_RA;
+
+  } rakar;
+
 } vatu;
 
 
-# Conjunct forms
+# Post-base forms
 # --------------
 
-# feature cjct {
-# } cjct;
+# feature pstf {
+# } pstf;
 
 
 # ----------------------------
 # MANDATORY PRESENTATION FORMS
 # ----------------------------
 
-# Pre-base Substitution
-# ---------------------
+# Pre-, Above-, Below-, and Post-base Substitution
+# ------------------------------------------------
 
 # feature pres {
 # } pres;
 
-# Above-base Substitution
-# -----------------------
-
 feature abvs {
-  lookup abvs_virama;
-  lookup abvs_matrai;
-  lookup abvs_matraii;
-  lookup abvs_reph;
+
+  lookup abvs_virama {
+    sub snKA snVirama by snK;
+    sub snKHA snVirama by snKH;
+    sub snGA snVirama by snG;
+    sub snGHA snVirama by snGH;
+    sub snNGA snVirama by snNG;
+    sub snNNGA snVirama by snNNG;
+    sub snCA snVirama by snC;
+    sub snCHA snVirama by snCH;
+    sub snJA snVirama by snJ;
+    sub snJHA snVirama by snJH;
+    sub snNYA snVirama by snNY;
+    sub snJNYA snVirama by snJNY;
+    sub snNYJA snVirama by snNYJ;
+    sub snTTA snVirama by snTT;
+    sub snTTHA snVirama by snTTH;
+    sub snDDA snVirama by snDD;
+    sub snDDHA snVirama by snDDH;
+    sub snNNA snVirama by snNN;
+    # sub snNNDDA snVirama by snNNDD;
+    sub snTA snVirama by snT;
+    sub snTHA snVirama by snTH;
+    sub snDA snVirama by snD;
+    sub snDHA snVirama by snDH;
+    sub snNA snVirama by snN;
+    sub snNDA snVirama by snND;
+    sub snPA snVirama by snP;
+    sub snPHA snVirama by snPH;
+    sub snBA snVirama by snB;
+    sub snBHA snVirama by snBH;
+    sub snMA snVirama by snM;
+    sub snMBA snVirama by snMB;
+    sub snYA snVirama by snY;
+    # sub snRA snVirama by snR; Rakar form
+    sub snLA snVirama by snL;
+    sub snVA snVirama by snV;
+    sub snSHA snVirama by snSH;
+    sub snSSA snVirama by snSS;
+    sub snSA snVirama by snS;
+    sub snHA snVirama by snH;
+    sub snLLA snVirama by snLL;
+    sub snFA snVirama by snF;
+    sub snK_VA snVirama by snK_V;
+    sub snK_SSA snVirama by snK_SS;
+    # sub snG_DHA snVirama by sG_DH;
+    sub snNY_CA snVirama by snNY_C;
+    sub snTT_TTHA snVirama by snTT_TTH;
+    sub snT_THA snVirama by snT_TH;
+    sub snT_VA snVirama by snT_V;
+    sub snD_DHA snVirama by snD_DH;
+    sub snD_VA snVirama by snD_V;
+    sub snN_THA snVirama by snN_TH;
+    sub snN_DA snVirama by snN_D;
+    sub snN_DHA snVirama by snN_DH;
+    sub snN_VA snVirama by snN_V;
+    # sub snNY_RA snVirama by snNY_R;
+    # sub snJYN_RA snVirama by snJNY_R;
+    # sub snD_RA snVirama by snD_R;
+    # sub snND_RA snVirama by snND_R;
+    # sub snL_RA snVirama by snL_R;
+    # sub snN_D_RA snVirama by snN_D_R;
+  } abvs_virama;
+
+  lookup abvs_matrai {
+    # sub snKA snmI by snKI;
+    sub snKHA snmI by snKHI;
+    # sub snGA snmI by snGI;
+    # sub snGHA snmI by snGHI;
+    sub snNGA snmI by snNGI;
+    sub snNNGA snmI by snNNGI;
+    sub snCA snmI by snCI;
+    # sub snCHA snmI by snCHI;
+    # sub snJA snmI by snJI;
+    sub snJHA snmI by snJHI;
+    # sub snNYA snmI by snNYI;
+    # sub snJNYA snmI by snJNYI;
+    # sub snNYJA snmI by snNYJI;
+    sub snTTA snmI by snTTI;
+    # sub snTTHA snmI by snTTHI;
+    sub snDDA snmI by snDDI;
+    # sub snDDHA snmI by snDDHI;
+    # sub snNNA snmI by snNNI;
+    # sub snNNDDA snmI by snNNDDI;
+    # sub snTA snmI by snTI;
+    # sub snTHA snmI by snTHI;
+    # sub snDA snmI by snDI;
+    sub snDHA snmI by snDHI;
+    # sub snNA snmI by snNI;
+    # sub snNDA snmI by snNDI;
+    # sub snPA snmI by snPI;
+    # sub snPHA snmI by snPHI;
+    sub snBA snmI by snBI;
+    # sub snBHA snmI by snBHI;
+    sub snMA snmI by snMI;
+    sub snMBA snmI by snMBI;
+    # sub snYA snmI by snYI;
+    # sub snRA snmI by snRI;
+    # sub snLA snmI by snLI;
+    sub snVA snmI by snVI;
+    # sub snSHA snmI by snSHI;
+    # sub snSSA snmI by snSSI;
+    # sub snSA snmI by snSI;
+    # sub snHA snmI by snHI;
+    # sub snLLA snmI by snLLI;
+    # sub snFA snmI by snFI;
+    sub snK_VA snmI by snK_VI;
+    sub snK_SSA snmI by snK_SSI;
+    # sub snG_DHA snmI by sG_DHI;
+    sub snNY_CA snmI by snNY_CI;
+    sub snTT_TTHA snmI by snTT_TTHI;
+    sub snT_THA snmI by snT_THI;
+    sub snT_VA snmI by snT_VI;
+    sub snD_DHA snmI by snD_DHI;
+    sub snD_VA snmI by snD_VI;
+    sub snN_THA snmI by snN_THI;
+    sub snN_DA snmI by snN_DI;
+    sub snN_DHA snmI by snN_DHI;
+    sub snN_VA snmI by snN_VI;
+    # sub snNY_RA snmI by snNY_RI;
+    # sub snJYN_RA snmI by snJNY_RI;
+    # sub snD_RA snmI by snD_RI;
+    # sub snND_RA snmI by snND_RI;
+    # sub snL_RA snmI by snL_RI;
+    # sub snN_D_RA snmI by snN_D_RI;
+  } abvs_matrai;
+
+  lookup abvs_matraii {
+    # sub snKA snmII by snKII;
+    sub snKHA snmII by snKHII;
+    # sub snGA snmII by snGII;
+    # sub snGHA snmII by snGHII;
+    sub snNGA snmII by snNGII;
+    sub snNNGA snmII by snNNGII;
+    sub snCA snmII by snCII;
+    # sub snCHA snmII by snCHII;
+    # sub snJA snmII by snJII;
+    sub snJHA snmII by snJHII;
+    # sub snNYA snmII by snNYII;
+    # sub snJNYA snmII by snJNYII;
+    # sub snNYJA snmII by snNYJII;
+    sub snTTA snmII by snTTII;
+    # sub snTTHA snmII by snTTHII;
+    sub snDDA snmII by snDDII;
+    # sub snDDHA snmII by snDDHII;
+    # sub snNNA snmII by snNNII;
+    # sub snNNDDA snmII by snNNDDII;
+    # sub snTA snmII by snTII;
+    # sub snTHA snmII by snTHII;
+    # sub snDA snmII by snDII;
+    sub snDHA snmII by snDHII;
+    # sub snNA snmII by snNII;
+    # sub snNDA snmII by snNDII;
+    # sub snPA snmII by snPII;
+    # sub snPHA snmII by snPHII;
+    sub snBA snmII by snBII;
+    # sub snBHA snmII by snBHII;
+    # sub snMA snmII by snmIII;
+    sub snMBA snmII by snMBII;
+    # sub snYA snmII by snYII;
+    # sub snRA snmII by snRII;
+    # sub snLA snmII by snLII;
+    sub snVA snmII by snVII;
+    # sub snSHA snmII by snSHII;
+    # sub snSSA snmII by snSSII;
+    # sub snSA snmII by snSII;
+    # sub snHA snmII by snHII;
+    # sub snLLA snmII by snLLII;
+    # sub snFA snmII by snFII;
+    sub snK_VA snmII by snK_VII;
+    sub snK_SSA snmII by snK_SSII;
+    # sub snG_DHA snmII by sG_DHII;
+    sub snNY_CA snmII by snNY_CII;
+    sub snTT_TTHA snmII by snTT_TTHII;
+    sub snT_THA snmII by snT_THII;
+    sub snT_VA snmII by snT_VII;
+    sub snD_DHA snmII by snD_DHII;
+    sub snD_VA snmII by snD_VII;
+    sub snN_THA snmII by snN_THII;
+    sub snN_DA snmII by snN_DII;
+    sub snN_DHA snmII by snN_DHII;
+    sub snN_VA snmII by snN_VII;
+    # sub snNY_RA snmII by snNY_RII;
+    # sub snJYN_RA snmII by snJNY_RII;
+    # sub snD_RA snmII by snD_RII;
+    # sub snND_RA snmII by snND_RII;
+    # sub snL_RA snmII by snL_RII;
+    # sub snN_D_RA snmII by snN_D_RII;
+  } abvs_matraii;
+
+  lookup abvs_reph {
+
+    sub snReph snKA    by snKA_Reph;
+    sub snReph snKHA   by snKHA_Reph;
+    sub snReph snGA    by snGA_Reph;
+    sub snReph snGHA   by snGHA_Reph;
+    sub snReph snNGA   by snNGA_Reph;
+    sub snReph snNNGA  by snNNGA_Reph;
+    sub snReph snCA    by snCA_Reph;
+    sub snReph snCHA   by snCHA_Reph;
+    sub snReph snJA    by snJA_Reph;
+    sub snReph snJHA   by snJHA_Reph;
+    sub snReph snNNGA  by snNNGA_Reph;
+    sub snReph snNYA   by snNYA_Reph;
+    sub snReph snJNYA  by snJNYA_Reph;
+    sub snReph snNYJA  by snNYJA_Reph;
+    sub snReph snTTA   by snTTA_Reph;
+    sub snReph snTTHA  by snTTHA_Reph;
+    sub snReph snDDA   by snDDA_Reph;
+    sub snReph snDDHA  by snDDHA_Reph;
+    sub snReph snNNA   by snNNA_Reph;
+    # sub snReph snNNDDA by snNNDDA_Reph;
+    sub snReph snTA    by snTA_Reph;
+    sub snReph snTHA   by snTHA_Reph;
+    sub snReph snDA    by snDA_Reph;
+    sub snReph snDHA   by snDHA_Reph;
+    sub snReph snNA    by snNA_Reph;
+    sub snReph snNDA   by snNDA_Reph;
+    sub snReph snPA    by snPA_Reph;
+    sub snReph snPHA   by snPHA_Reph;
+    sub snReph snBA    by snBA_Reph;
+    sub snReph snBHA   by snBHA_Reph;
+    sub snReph snMA    by snMA_Reph;
+    sub snReph snMBA   by snMBA_Reph;
+    sub snReph snYA    by snYA_Reph;
+    sub snReph snRA    by snRA_Reph;
+    sub snReph snLA    by snLA_Reph;
+    sub snReph snVA    by snVA_Reph;
+    sub snReph snSHA   by snSHA_Reph;
+    sub snReph snSSA   by snSSA_Reph;
+    sub snReph snSA    by snSA_Reph;
+    sub snReph snHA    by snHA_Reph;
+    sub snReph snLLA   by snLLA_Reph;
+    sub snReph snFA    by snFA_Reph;
+
+    sub snReph snK_VA    by snK_VA_Reph;
+    sub snReph snK_SSA   by snK_SSA_Reph;
+    sub snReph snG_DHA   by snG_DHA_Reph;
+    sub snReph snNY_CA   by snNY_CA_Reph;
+    sub snReph snTT_TTHA by snTT_TTHA_Reph;
+    sub snReph snT_THA   by snT_THA_Reph;
+    sub snReph snT_VA    by snT_VA_Reph;
+    sub snReph snD_DHA   by snD_DHA_Reph;
+    sub snReph snD_VA    by snD_VA_Reph;
+    sub snReph snN_THA   by snN_THA_Reph;
+    # sub snReph snN_D_RA  by snN_D_RA_Reph;
+    sub snReph snN_DA    by snN_DA_Reph;
+    sub snReph snN_DHA   by snN_DHA_Reph;
+    sub snReph snN_VA    by snN_VA_Reph;
+    # sub snReph snYac2    by snYAc2_Reph;
+
+  } abvs_reph;
+
 } abvs;
 
-
-# Below-base Substitution
-# -----------------------
-
 feature blws {
-  lookup blws_matrau;
-  lookup blws_matrauu;
+
+  lookup blws_matrau {
+    sub snKA snmU by snKU;
+    sub snGA snmU by snGU;
+    sub snNNGA snmU by snNNGU;
+    sub snNYA snmU by snNYU;
+    sub snJNYA snmU by snJNYU;
+    sub snTA snmU by snTU;
+    sub snDA snmU by snDU;
+    sub snNA snmU by snNU;
+    sub snNDA snmU by snNDU;
+    sub snBHA snmU by snBHU;
+    sub snRA snmU by snRU;
+    sub snLA snmU by snLU;
+    sub snSHA snmU by snSHU;
+    sub snLLA snmU by snLLU;
+  } blws_matrau;
+
+  lookup blws_matrauu {
+    sub snKA snmUU by snKUU;
+    sub snGA snmUU by snGUU;
+    sub snNNGA snmUU by snNNGUU;
+    sub snNYA snmUU by snNYUU;
+    sub snJNYA snmUU by snJNYUU;
+    sub snTA snmUU by snTUU;
+    sub snDA snmUU by snDUU;
+    sub snNA snmUU by snNUU;
+    sub snNDA snmUU by snNDUU;
+    sub snBHA snmUU by snBHUU;
+    sub snRA snmUU by snRUU;
+    sub snLA snmUU by snmUU;
+    sub snSHA snmUU by snSHUU;
+    sub snLLA snmUU by snLLUU;
+  } blws_matrauu;
+
 } blws;
 
-
-# Post-base Substitution
-# ----------------------
-
 # feature psts {
-#   lookup psts;
 # } psts;
-
-
-# Halant Forms
-# ------------
-
-# feature haln {
-#   lookup haln;
-# } haln;
-
-
-# Required Contextual Alternates
-# ------------------------------
-# Newly introduced.
-
-# feature rclt {
-# } rclt;
-
-
-# --------------------------------
-# DISCRETIONARY PRESENTATION FORMS
-# --------------------------------
-
-# Contextual Alternates
-# ---------------------
-
-# feature calt {
-# } calt;
 
 
 # -----------
@@ -179,9 +471,9 @@ feature blws {
 # include (markclasses.fea);
 
 # feature abvm {
-#   # include (abvm.fea);
+#   include (abvm.fea);
 # } abvm;
-#
+
 # feature blwm {
-#   # include (blwm.fea);
+#   include (blwm.fea);
 # } blwm;
