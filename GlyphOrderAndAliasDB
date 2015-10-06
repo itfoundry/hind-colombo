@@ -3,9 +3,6 @@ NULL NULL uni0000
 CR CR uni000D
 space space uni0020
 
-snAnusvara snAnusvara uni0D82
-snVisarga snVisarga uni0D83
-
 snA snA uni0D85
 snAA snAA uni0D86
 snAE snAE uni0D87
@@ -24,6 +21,24 @@ snAI snAI uni0D93
 snO snO uni0D94
 snOO snOO uni0D95
 snAU snAU uni0D96
+
+snmAA snmAA uni0DCF
+snmAE snmAE uni0DD0
+snmAAE snmAAE uni0DD1
+snmI snmI uni0DD2
+snmII snmII uni0DD3
+snmU snmU uni0DD4
+snmUU snmUU uni0DD6
+snmvR snmvR uni0DD8
+snmvRR snmvRR uni0DF2
+snmvL snmvL uni0DDF
+snmvLL snmvLL uni0DF3
+snmE snmE uni0DD9
+snmEE snmEE uni0DDA
+snmAI snmAI uni0DDB
+snmO snmO uni0DDC
+snmOO snmOO uni0DDD
+snmAU snmAU uni0DDE
 
 snKA snKA uni0D9A
 snKHA snKHA uni0D9B
@@ -67,26 +82,11 @@ snHA snHA uni0DC4
 snLLA snLLA uni0DC5
 snFA snFA uni0DC6
 
+snAnusvara snAnusvara uni0D82
+snVisarga snVisarga uni0D83
 snVirama snVirama uni0DCA
 
-snmAA snmAA uni0DCF
-snmAE snmAE uni0DD0
-snmAAE snmAAE uni0DD1
-snmI snmI uni0DD2
-snmII snmII uni0DD3
-snmU snmU uni0DD4
-snmUU snmUU uni0DD6
-snmvR snmvR uni0DD8
-snmvRR snmvRR uni0DF2
-snmvL snmvL uni0DDF
-snmvLL snmvLL uni0DF3
-snmE snmE uni0DD9
-snmEE snmEE uni0DDA
-snmAI snmAI uni0DDB
-
-snmO snmO uni0DDC
-snmOO snmOO uni0DDD
-snmAU snmAU uni0DDE
+snKunddaliya snKunddaliya uni0DF4
 
 danda danda uni0964
 doubledanda doubledanda uni0965
