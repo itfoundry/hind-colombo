@@ -167,6 +167,46 @@ feature abvs {
   sub snN_DHA snmII by snN_DHA_mII;
   sub snN_VA snmII by snN_VA_mII;
 
+  sub snCHA snVirama by snCHA_Virama;
+  sub snJA snVirama by snJA_Virama;
+  sub snNYJA snVirama by snNYJA_Virama;
+  sub snTTHA snVirama by snTTHA_Virama;
+  sub snDDHA snVirama by snDDHA_Virama;
+  sub snTHA snVirama by snTHA_Virama;
+  sub snPHA snVirama by snPHA_Virama;
+  sub snRA snVirama by snRA_Virama;
+  sub snTT_TTHA snVirama by snTT_TTHA_Virama;
+  sub snT_THA snVirama by snT_THA_Virama;
+  sub snN_THA snVirama by snN_THA_Virama;
+
+  sub snCHA snmI by snCHA_mI;
+  sub snJA snmI by snJA_mI;
+  sub snNYJA snmI by snNYJA_mI;
+  sub snTTHA snmI by snTTHA_mI;
+  sub snDDHA snmI by snDDHA_mI;
+  sub snNNA snmI by snNNA_mI;
+  sub snTHA snmI by snTHA_mI;
+  sub snDA snmI by snDA_mI;
+  sub snPHA snmI by snPHA_mI;
+  sub snRA snmI by snRA_mI;
+  sub snTT_TTHA snmI by snTT_TTHA_mI;
+  sub snT_THA snmI by snT_THA_mI;
+  sub snN_THA snmI by snN_THA_mI;
+
+  sub snCHA snmII by snCHA_mII;
+  sub snJA snmII by snJA_mII;
+  sub snNYJA snmII by snNYJA_mII;
+  sub snTTHA snmII by snTTHA_mII;
+  sub snDDHA snmII by snDDHA_mII;
+  sub snNNA snmII by snNNA_mII;
+  sub snTHA snmII by snTHA_mII;
+  sub snDA snmII by snDA_mII;
+  sub snPHA snmII by snPHA_mII;
+  sub snRA snmII by snRA_mII;
+  sub snTT_TTHA snmII by snTT_TTHA_mII;
+  sub snT_THA snmII by snT_THA_mII;
+  sub snN_THA snmII by snN_THA_mII;
+
 } abvs;
 
 feature blws {
@@ -198,6 +238,20 @@ feature blws {
   sub snSHA snmUU by snSHA_mUU;
   sub snLLA snmUU by snLLA_mUU;
   sub snN_DA snmUU by snN_DA_mUU;
+
+  sub snNA snmU by snNA_mU;
+  sub snLA snmU by snLA_mU;
+  sub snHA snmU by snHA_mU;
+
+  sub snNA snmUU by snNA_mUU;
+  sub snLA snmUU by snLA_mUU;
+  sub snHA snmUU by snHA_mUU;
+
+  sub [snCA snTTA snTTHA snTHA snDHA snTHA snVA] snRAc2' by snRAc2.09;
+    
+  sub [snCA snTTA snTTHA snTHA snDHA snTHA snVA snFA] [snmU snmUU]' by [snmU.01 snmUU.01];
+  sub snYA [snmU snmUU]' by [snmU.02 snmUU.02];
+  sub [snMA snMBA] [snmU snmUU]' by [snmU.03 snmUU.03];
 
 } blws;
 
