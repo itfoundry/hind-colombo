@@ -1,5 +1,10 @@
 {
 .appVersion = "1355";
+DisplayStrings = (
+"/snPA/snMA/snmU.03/snMBA/snmU.03",
+"/snmI",
+"/snTA_mU"
+);
 customParameters = (
 {
 name = glyphOrder;
@@ -3064,7 +3069,7 @@ unicode = 0DD1;
 },
 {
 glyphname = snmI;
-lastChange = "2015-10-16 08:44:41 +0000";
+lastChange = "2021-06-06 03:53:25 +0000";
 layers = (
 {
 layerId = "25BA55F5-DD3E-4682-A696-ADF7D9496427";
@@ -3072,20 +3077,20 @@ paths = (
 {
 closed = 1;
 nodes = (
-"-217 598 LINE",
-"-217 672 OFFCURVE",
-"-297 706 OFFCURVE",
-"-396 706 CURVE SMOOTH",
-"-489 706 OFFCURVE",
-"-564 672 OFFCURVE",
-"-564 598 CURVE",
 "-624 598 LINE",
 "-624 711 OFFCURVE",
 "-510 761 OFFCURVE",
 "-396 761 CURVE SMOOTH",
 "-273 761 OFFCURVE",
 "-157 711 OFFCURVE",
-"-157 598 CURVE"
+"-157 598 CURVE",
+"-217 598 LINE",
+"-217 672 OFFCURVE",
+"-297 706 OFFCURVE",
+"-396 706 CURVE SMOOTH",
+"-489 706 OFFCURVE",
+"-564 672 OFFCURVE",
+"-564 598 CURVE"
 );
 }
 );
@@ -11840,7 +11845,7 @@ unicode = 0DB8;
 },
 {
 glyphname = snMBA;
-lastChange = "2015-10-16 16:21:23 +0000";
+lastChange = "2021-06-06 03:56:11 +0000";
 layers = (
 {
 layerId = "25BA55F5-DD3E-4682-A696-ADF7D9496427";
@@ -11980,7 +11985,7 @@ nodes = (
 );
 }
 );
-width = 914;
+width = 919;
 },
 {
 layerId = "7B4D842D-CA8D-4153-9CDE-FADFBE419175";
@@ -53632,7 +53637,7 @@ width = 0;
 {
 color = 9;
 glyphname = snmU.03;
-lastChange = "2015-10-16 16:17:59 +0000";
+lastChange = "2021-06-06 03:56:41 +0000";
 layers = (
 {
 layerId = "25BA55F5-DD3E-4682-A696-ADF7D9496427";
@@ -53640,24 +53645,24 @@ paths = (
 {
 closed = 1;
 nodes = (
-"26 -270 LINE",
-"-523 -270 LINE",
-"-606 -270 OFFCURVE",
-"-660 -223 OFFCURVE",
-"-660 -147 CURVE SMOOTH",
-"-660 -123 OFFCURVE",
-"-658 -110 OFFCURVE",
-"-654 -90 CURVE",
-"-595 -90 LINE",
-"-598 -104 OFFCURVE",
-"-600 -124 OFFCURVE",
-"-600 -138 CURVE SMOOTH",
-"-600 -187 OFFCURVE",
-"-571 -215 OFFCURVE",
-"-520 -215 CURVE",
-"-33 -215 LINE",
-"-33 360 LINE",
-"26 360 LINE"
+"-79 -270 LINE",
+"-602 -270 LINE",
+"-685 -270 OFFCURVE",
+"-739 -223 OFFCURVE",
+"-739 -147 CURVE SMOOTH",
+"-739 -123 OFFCURVE",
+"-737 -110 OFFCURVE",
+"-733 -90 CURVE",
+"-674 -90 LINE",
+"-677 -104 OFFCURVE",
+"-679 -124 OFFCURVE",
+"-679 -138 CURVE SMOOTH",
+"-679 -187 OFFCURVE",
+"-650 -215 OFFCURVE",
+"-599 -215 CURVE",
+"-138 -215 LINE",
+"-135 328 LINE",
+"-76 328 LINE"
 );
 }
 );
