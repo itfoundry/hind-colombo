@@ -17319,7 +17319,7 @@ width = 1410;
 },
 {
 glyphname = snAnusvara;
-lastChange = "2015-10-06 07:36:18 +0000";
+lastChange = "2021-06-06 03:50:57 +0000";
 layers = (
 {
 background = {
@@ -17486,6 +17486,7 @@ nodes = (
 width = 475;
 }
 );
+unicode = 0D82;
 },
 {
 glyphname = snVisarga;
